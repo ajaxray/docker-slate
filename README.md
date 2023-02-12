@@ -61,8 +61,9 @@ You are free to deploy the files anywhere, without any dependency.
 ### Display multiline code or JSON in the middle column
 
 Slatedocs pulls all multiline code blocks to the third column. 
+But sometimes you may want to keep a JSON sample or code fragment on the main middle column. 
 
-This setup added a new class `pre`, that will show preformatted code in the middle column.
+So, this setup has added a new `aside` class "pre", that will show preformatted code in the middle column.
 ```html
 <aside class="pre">
 {
@@ -72,8 +73,9 @@ This setup added a new class `pre`, that will show preformatted code in the midd
 </aside>
 ```
 
-> **Note:** Slate comes with 3 built in class for showing blocked notes: `notice`, `warning` and `success`.
-> 
+> **Note:** Slate comes with 3 built in aside class for showing blocked notes: `notice`, `warning` and `success`.
+
+
 Deploy API Documentation as Github Pages
 ---------------------------------
 The `./build.sh` will update static build in `./docs` folder.
@@ -81,9 +83,10 @@ The `./build.sh` will update static build in `./docs` folder.
 So, to publish the documentation with Github Pages, 
 1. From settings page of your repository, enable Github pages and set `/docs` as the source of the publishing site.
   <img src="img/github_pages.png" alt="Enable Github Pages" width="80%">
+
 2. Build with `./build.sh`
 3. Commit (with including all changes in `/source` and `/docs`)
-4. Push. You should see the changes published in Github Page url.
+4. Push. You should see the changes published in Github-Page url.
 
 
 Features
