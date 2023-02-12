@@ -1,0 +1,11 @@
+tmp
+*.DS_STORE
+build/
+.cache
+.sass-cache
+
+# YARD artifacts
+.yardoc
+_yardoc
+doc/
+.idea/
